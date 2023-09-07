@@ -3,7 +3,8 @@ from flask import Flask, jsonify, request, Request, Response
 import json
 from typing import List, Dict, Any, Union, Optional, Tuple
 
-from data.raw_data import data, family_data, Relationship
+from data.raw_data import data, family_data
+from models.user_models import Relationship
 
 app = Flask(__name__)
 
