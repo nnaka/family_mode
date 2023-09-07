@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
-from enum import Enum
 from typing import List, Dict, Any, Union, Optional
+from models.user_models import Relationship
 
 data: List[Dict[str, Any]] = [
     {
@@ -72,10 +72,6 @@ data: List[Dict[str, Any]] = [
         },
     },
 ]
-
-
-class Relationship(Enum):
-    FAMILY = 0
 
 
 # ID to set of IDs for which the user has view permissions
